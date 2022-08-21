@@ -366,7 +366,7 @@ for(int i=0;i<4;i++)
     delay(1);
     printf(".");
 }
-    main_menu();
+    //main_menu();
 }
 
 
