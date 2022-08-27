@@ -6,8 +6,8 @@ using std::string;
 
 int main () 
 {
-  const char *c = "hello";
+  char *c = "hello";
 
-  cout<< *c<<endl;
+  cout<< *c<<endl;  
   cout<<  c;
 }
