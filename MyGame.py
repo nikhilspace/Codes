@@ -187,7 +187,7 @@ while True:
                 player_gravity = -23
                  
         if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_SPACE:
+            if event.key == pygame.K_SPACE: 
                 if player_rect.bottom == 300:
                     player_gravity = -23
         else:
