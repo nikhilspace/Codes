@@ -1,6 +1,6 @@
 import pygame
 from sys import exit
-from random import randint, choice
+from random import randint,choice
 
 class Player(pygame.sprite.Sprite):
 	def __init__(self):
@@ -35,7 +35,8 @@ class Player(pygame.sprite.Sprite):
 			self.image = self.player_jump
 		else:
 			self.player_index += 0.1
-			if self.player_index >= len(self.player_walk):self.player_index = 0
+			if self.player_index >= len(self.player_walk):
+				self.player_index = 0
 			self.image = self.player_walk[int(self.player_index)]
 
 	def update(self):
@@ -87,7 +88,8 @@ def collision_sprite():
 	if pygame.sprite.spritecollide(player.sprite,obstacle_group,False):
 		obstacle_group.empty()
 		return False
-	else: return True
+	else: 
+		return True
 
 
 pygame.init()
@@ -137,8 +139,7 @@ while True:
 			if event.type == pygame.KEYDOWN and event.key == pygame.K_SPACE:
 				game_active = True
 				start_time = int(pygame.time.get_ticks() / 1000)
-
-
+				
 	if game_active:
 		screen.blit(sky_surface,(0,0))
 		screen.blit(ground_surface,(0,300))

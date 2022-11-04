@@ -6,6 +6,7 @@
 
 void main_menu();
 
+
 struct date
 {
     int month,day,year;   
@@ -359,14 +360,14 @@ void main ()
 {
     system("cls");
     printf("\t\t\t---FASHION STORE MANAGEMENT PROGRAM---\n");
-    printf("\n\n\n\n\n\nNikhil Mahar\n");
+    printf("\n\n\n\n\n\nMade by Nikhil Mahar\n");
     printf("LOADING");
 for(int i=0;i<4;i++) 
 {  
     delay(1);
     printf(".");
 }
-    //main_menu();
+    main_menu();
 }
 
 
