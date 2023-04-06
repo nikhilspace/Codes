@@ -8,10 +8,3 @@ int func(int a)
 
     return a;
 }
-
-int main ()
-{
-    int a = 10;
-    int c = func(10);
-    printf("%d",c);
-}
