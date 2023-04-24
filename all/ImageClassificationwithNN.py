@@ -39,3 +39,6 @@ model.add(layers.Dense(10, activation = 'softmax'))
 
 model.compile(optimizer = 'adam', loss = 'sparse_categorical_crossentropy', matrics=['accuracy'])
 model.fit(training_images,training_label, epochs=10,validation_data=(training_images,training_label))
+
+
+
