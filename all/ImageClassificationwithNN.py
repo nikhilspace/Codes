@@ -5,6 +5,8 @@ from tensorflow import datasets, layers, models
 
 
 
+
+
 (training_images,training_label),(testing_images,testing_label) = datasets.cifar10.load_data()
 training_images, testing_images = training_images / 255, testing_images / 255
 
